@@ -6,7 +6,7 @@ const User = () => {
   return (
     <View style={styles.container}>
         <Stack.Screen options={{title:"Days"}} />
-      <Text>User</Text>
+      <Text style={styles.txt}>User</Text>
     </View>
   )
 }
@@ -16,6 +16,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    txt:{
+        fontFamily: 'AmaticB',
+        fontSize: 30,
     }
 })
 
