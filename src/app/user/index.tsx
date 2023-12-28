@@ -1,17 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import { Stack } from 'expo-router'
 
-type Props = {}
-
-const About = (props: Props) => {
+const User = () => {
   return (
     <View style={styles.container}>
-      <Text>About</Text>
+        <Stack.Screen options={{title:"Days"}} />
+      <Text>User</Text>
     </View>
   )
 }
-
-export default About
 
 const styles = StyleSheet.create({
     container:{
@@ -20,3 +18,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     }
 })
+
+export default User

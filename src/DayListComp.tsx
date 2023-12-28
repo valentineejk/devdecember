@@ -1,4 +1,5 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Link } from "expo-router";
+import { Text, View, StyleSheet, Pressable } from "react-native";
 
 type days = {
     day: number
@@ -7,9 +8,12 @@ type days = {
 
 export default function DayListComp(props:days) {
     return(
-        <View style={styles.box}> 
+      <Link href={'/user'} asChild>
+        <Pressable style={styles.box}> 
         <Text style={styles.txt}>{props.day}</Text>
-        </View>
+
+        </Pressable>
+        </Link>
     )
 }
 
